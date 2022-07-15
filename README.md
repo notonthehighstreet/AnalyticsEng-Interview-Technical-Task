@@ -11,32 +11,33 @@ Guidelines
 2. Unit tests must be provided
 3. The whole test might take 60-90 minutes to complete
 4. Fork this repo to your profile for committing code to review.
+5. ERD and description of data set is provided below.
 
-
-## Objectives
-A data file will be provided alongside this test. The dataset is a CSV which contains publicly available data about New York Police Dept. (NYPD) Arrest Data in 2018 first 6 six months. 
 
 ## Description of the data set
 
+ ![ERD](![XoEugp6](https://user-images.githubusercontent.com/85954874/179325665-e6fee79e-309f-442c-a963-7c0004655d00.jpeg)
+
+
 The database has several tables:
 
-[ employees ] table stores employees data such as employee id, last name, first name, etc. It also has a self referential field named ReportsTo to specify who reports to whom.
+***employees*** table stores employees data such as employee id, last name, first name, etc. It also has a self referential field named ReportsTo to specify who reports to whom.
 
-[customers] table stores customers data.
+***customers*** table stores customers data.
 
-[invoices & invoice_items] tables: these two tables store invoice data. The invoices table stores invoice header data and the invoice_items table stores the invoice line-items data. To get the total cost associated with a line-item multiply UnitPrice by Quantity.
+***invoices & invoice_items*** tables: these two tables store invoice data. The invoices table stores invoice header data and the invoice_items table stores the invoice line-items data. To get the total cost associated with a line-item multiply UnitPrice by Quantity.
 
-[artists] table stores artists data. It is a simple table that contains only the artist id and name.
+***artists*** table stores artists data. It is a simple table that contains only the artist id and name.
 
-[albums] table stores data about a list of tracks. Each album belongs to one artist. However, one artist may have multiple albums.
+***albums*** table stores data about a list of tracks. Each album belongs to one artist. However, one artist may have multiple albums.
 
-[media_types] table stores media types such as MPEG audio and AAC audio file.
+***media_types*** table stores media types such as MPEG audio and AAC audio file.
 
-[genres] table stores music types such as rock, jazz, metal, etc.
+***genres*** table stores music types such as rock, jazz, metal, etc.
 
-[tracks] table store the data of songs. Each track belongs to one album.
+***tracks*** table store the data of songs. Each track belongs to one album.
 
-[playlists & playlist_track] tables: playlists table store data about playlists. Each playlist contains a list of tracks. Each track may belong to multiple playlists. The relationship between the playlists table and playlists_track table is many-to-many. The playlist_track table is used to reflect this relationship.
+***playlists & playlist_track*** tables: playlists table store data about playlists. Each playlist contains a list of tracks. Each track may belong to multiple playlists. The relationship between the playlists table and playlists_track table is many-to-many. The playlist_track table is used to reflect this relationship.
 
 
 
