@@ -16,7 +16,7 @@ Guidelines
 
 ## Description of the data set
 
- ![ERD](![XoEugp6](https://user-images.githubusercontent.com/85954874/179325665-e6fee79e-309f-442c-a963-7c0004655d00.jpeg)
+ ![ERD](https://user-images.githubusercontent.com/85954874/179325665-e6fee79e-309f-442c-a963-7c0004655d00.jpeg)
 
 
 The database has several tables:
