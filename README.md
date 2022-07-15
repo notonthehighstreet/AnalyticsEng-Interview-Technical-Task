@@ -20,7 +20,7 @@ A data file will be provided alongside this test. The dataset is a CSV which con
 
 The database has several tables:
 
-[employees] table stores employees data such as employee id, last name, first name, etc. It also has a self referential field named ReportsTo to specify who reports to whom.
+[ employees ] table stores employees data such as employee id, last name, first name, etc. It also has a self referential field named ReportsTo to specify who reports to whom.
 
 [customers] table stores customers data.
 
