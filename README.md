@@ -6,9 +6,9 @@ This is a benchmark test to ensure that the candidate can show a good understand
 ## Rules
  A link to a public Git repository with your final solution must be provided within 48 hours of receipt of the test. 
 
-Guidelines
-1. To help understand how you approach the problem, we will assess your use of source control and how you build to the final solution, checking what is   committed along each step (hint: frequent push)
-2. Unit tests must be provided
+## Instructions
+1. Please Read the MD file completely!
+2. To help understand how you approach the problem, we will assess your use of source control and how you build to the final solution, checking what is   committed along each step (hint: frequent push)
 3. The whole test might take 60-90 minutes to complete
 4. Fork this repo to your profile for committing code to review.
 5. ERD and description of data set is provided below.
@@ -41,7 +41,7 @@ The database has several tables:
 
 
 
-### Actions
+## Actions
 1. Load the data file, process and output the data in the forms specified
 2. Read in, process and present the data as specified in the requirements section
 3. Demonstrate usage of list comprehension for at least one of the tasks
