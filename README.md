@@ -11,6 +11,7 @@ This is a benchmark test to ensure that the candidate can show a good understand
 3. The whole test might take 60-90 minutes to complete
 4. Fork this repo to your profile for committing code to review.
 5. ERD and description of data set is provided below.
+6. The repo includes a template folder structure.
 
 
 ## Description of the data set
@@ -38,17 +39,10 @@ The database has several tables:
 
 ***playlists & playlist_track*** tables: playlists table store data about playlists. Each playlist contains a list of tracks. Each track may belong to multiple playlists. The relationship between the playlists table and playlists_track table is many-to-many. The playlist_track table is used to reflect this relationship.
 
-
-
-## Actions
-1. Load the data file, process and output the data in the forms specified
-2. Read in, process and present the data as specified in the requirements section
-3. Demonstrate usage of list comprehension for at least one of the tasks
-4. Allow user input to run all of your script, or specific sections
-
+#
 
 ## Requirements
-1. Model must output data that contains for every track, aggregated by calendar month: the id of the track, the name of the track, the number of times it has been bought, and the total costs associated with the purchases
+1. Model must output data that contains for every track, aggregated by calendar month: the id of the track, the name of the track, the number of times it has been bought, and the total costs associated with the purchases.
 2. Although the parent DAG runs everyday, configure the model to be as cost efficient as possible on the basis that there is a very large volume of data to process. Assume that there are no late arriving records.
 3. Ensure the model is idempotent
 4. Given the underlying DB is Snowflake, configure the model appropriately to take advantage of Snowflake’s clustering and micro-partitioning performance features
@@ -57,16 +51,15 @@ The database has several tables:
 7. Email the URL of your repo to the NOTHS people team. Please ensure it is publicly accessible
 
 
-
 ## Assessment
-
 Your code will be reviewed and assessed according to the following:
 1. Adherence to the requirements
 2. Code quality – readability, structure of the code, performance
 3. Unit test coverage and relevance of the tests
+4. Syntax or execution errors
+
 
 ## Helpful Tips
-
 - If you struggle completing the test or have concerns over certain aspects that is okay – just highlight it to us when you submit your test. 
 - Explain what you couldn't get working and steps you took to solve the problem. Whilst we want to see completed tests it is just as important for us to see how you approached an issue and attempted to find a solution. 
 - Do not overthink your solution. Keep it simple and use what you know. Write tests only for your code. 
