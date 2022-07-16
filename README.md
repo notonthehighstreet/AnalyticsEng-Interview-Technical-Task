@@ -1,6 +1,6 @@
 # AnalyticsEng-Interview-Technical-Task
 
-# This is a benchmark test to ensure that the candidate can show a good understanding of the fundamentals of reading, coding and delivering to a timeframe.
+This is a benchmark test to ensure that the candidate can show a good understanding of the fundamentals of reading, coding and delivering to a timeframe.
 
 ## Rules
  A link to a public Git repository with your final solution must be provided within 48 hours of receipt of the test. 
