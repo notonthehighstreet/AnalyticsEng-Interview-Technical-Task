@@ -1,0 +1,81 @@
+Customers:
+CustomerId,FirstName,LastName,Company,Address,City,State,Country,PostalCode,Phone,Fax,Email,SupportRepId
+1,Luís,Gonçalves,Embraer - Empresa Brasileira de Aeronáutica S.A.,Av. Brigadeiro Faria Lima 2170,São José dos Campos,SP,Brazil,12227-000,+55 (12) 3923-5555,+55 (12) 3923-5566,luisg@embraer.com.br,3
+2,Leonie,Köhler,None,Theodor-Heuss-Straße 34,Stuttgart,None,Germany,70174,+49 0711 2842222,None,leonekohler@surfeu.de,5
+3,François,Tremblay,None,1498 rue Bélanger,Montréal,QC,Canada,H2G 1A7,+1 (514) 721-4711,None,ftremblay@gmail.com,3
+4,Bjørn,Hansen,None,Ullevålsveien 14,Oslo,None,Norway,0171,+47 22 44 22 22,None,bjorn.hansen@yahoo.no,4
+5,František,Wichterlová,JetBrains s.r.o.,Klanova 9/506,Prague,None,Czech Republic,14700,+420 2 4172 5555,+420 2 4172 5555,frantisekw@jetbrains.com,
+
+Invoices:
+InvoiceId,CustomerId,InvoiceDate,BillingAddress,BillingCity,BillingState,BillingCountry,BillingPostalCode,Total
+1,2,2009-01-01 00:00:00,Theodor-Heuss-Straße 34,Stuttgart,None,Germany,70174,1.98
+2,4,2009-01-02 00:00:00,Ullevålsveien 14,Oslo,None,Norway,0171,3.96
+3,8,2009-01-03 00:00:00,Grétrystraat 63,Brussels,None,Belgium,1000,5.94
+4,14,2009-01-06 00:00:00,8210 111 ST NW,Edmonton,AB,Canada,T6G 2C7,8.91
+5,23,2009-01-11 00:00:00,69 Salem Street,Boston,MA,USA,2113,13.86
+
+Invoice_Items:
+InvoiceLineId,InvoiceId,TrackId,UnitPrice,Quantity
+1,1,2,0.99,1
+2,1,4,0.99,1
+3,2,6,0.99,1
+4,2,8,0.99,1
+5,2,10,0.99,1
+
+Albums:
+AlbumId,Title,ArtistId
+1,For Those About To Rock We Salute You,1
+2,Balls to the Wall,2
+3,Restless and Wild,2
+4,Let There Be Rock,1
+5,Big Ones,3
+
+Artists:
+ArtistId,Name
+1,AC/DC
+2,Accept
+3,Aerosmith
+4,Alanis Morissette
+5,Alice In Chains
+
+
+Media_Types:
+MediaTypeId,Name
+1,MPEG audio file
+2,Protected AAC audio file
+3,Protected MPEG-4 video file
+4,Purchased AAC audio file
+5,AAC audio file
+
+Genres:
+GenreId,Name
+1,Rock
+2,Jazz
+3,Metal
+4,Alternative & Punk
+5,Rock And Roll
+
+Tracks:
+TrackId,Name,AlbumId,MediaTypeId,GenreId,Composer,Milliseconds,Bytes,UnitPrice
+1,For Those About To Rock (We Salute You),1,1,1,Angus Young Malcolm Young Brian Johnson,343719,11170334,0.99
+2,Balls to the Wall,2,2,1,None,342562,5510424,0.99
+3,Fast As a Shark,3,2,1,F. Baltes S. Kaufman U. Dirkscneider & W. Ho...,230619,3990994,0.99
+4,Restless and Wild,3,2,1,F. Baltes R.A. Smith-Diesel S. Kaufman U. D...,252051,4331779,0.99
+5,Princess of the Dawn,3,2,1,Deaffy & R.A. Smith-Diesel,375418,6290521,0.99
+
+Playlists:
+PlaylistId,Name
+1,Music
+2,Movies
+3,TV Shows
+4,Audiobooks
+5,90’s Music
+
+
+Playlist_track:
+PlaylistId,TrackId
+1,3402
+1,3389
+1,3390
+1,3391
+1,3392
