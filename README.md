@@ -39,6 +39,7 @@ The database has several tables:
 
 ***playlists & playlist_track*** tables: playlists table store data about playlists. Each playlist contains a list of tracks. Each track may belong to multiple playlists. The relationship between the playlists table and playlists_track table is many-to-many. The playlist_track table is used to reflect this relationship.
 
+*Sample data records are in the sample_data.csv file*
 #
 
 ## Requirements
