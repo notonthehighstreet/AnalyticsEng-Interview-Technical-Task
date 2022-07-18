@@ -41,7 +41,7 @@ The database has several tables:
 
 #
 ## Requirements
-1. Model must output data that contains for every track, aggregated by calendar month: the id of the track, the name of the track, the number of times it has been bought, and the total costs associated with the purchases.
+1. Model must output data that contains for **every** track, aggregated by calendar month: the id of the track, the name of the track, the number of times it has been bought, and the total costs associated with the purchases.
 2. Although the parent DAG runs everyday, configure the model to be as cost efficient as possible on the basis that there is a very large volume of data to process. Assume that there are no late arriving records.
 3. Ensure the model is idempotent
 4. Given the underlying DB is Snowflake, configure the model appropriately to take advantage of Snowflake’s clustering and micro-partitioning performance features
