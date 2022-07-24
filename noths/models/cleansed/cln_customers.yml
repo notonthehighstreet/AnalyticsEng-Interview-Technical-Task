@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_customers
+    description: > 
+      Cleansed customers table 
+      Stores customers data
+    columns:
+      - name: CustomerId
+        description: System generated id of the customers record
+        tests:
+          - unique
+          - not_null

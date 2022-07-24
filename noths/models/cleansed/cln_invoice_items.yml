@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_invoice_items
+    description: > 
+      Cleansed invoice_items table 
+      Stores the invoice line-items data
+    columns:
+      - name: InvoiceLineId
+        description: System generated id of the invoice_items record
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_playlists
+    description: > 
+      Cleansed playlists table 
+      Sstore data about playlists. Each playlist contains a list of tracks. Each track may belong to multiple playlists
+    columns:
+      - name: PlaylistId
+        description: System generated id of the playlists record
+        tests:
+          - unique
+          - not_null

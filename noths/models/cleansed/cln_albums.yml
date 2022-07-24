@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_albums
+    description: > 
+      Cleansed albums table 
+      Stores data about a list of tracks. Each album belongs to one artist. However, one artist may have multiple albums
+    columns:
+      - name: AlbumId
+        description: System generated id of the albums record
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_tracks
+    description: > 
+      Cleansed tracks table 
+      Store the data of songs. Each track belongs to one album.
+    columns:
+      - name: TrackId
+        description: System generated id of the tracks record
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_genres
+    description: > 
+      Cleansed genres table 
+      Stores music types such as rock, jazz, metal, etc
+    columns:
+      - name: GenreId
+        description: System generated id of the genres record
+        tests:
+          - unique
+          - not_null

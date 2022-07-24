@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_media_types
+    description: > 
+      Cleansed media_types table 
+      Stores media types such as MPEG audio and AAC audio file
+    columns:
+      - name: MediaTypeId
+        description: System generated id of the media_types record
+        tests:
+          - unique
+          - not_null
