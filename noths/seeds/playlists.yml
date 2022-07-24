@@ -1,0 +1,8 @@
+version: 2
+
+seeds:
+  - name: 'playlists'
+    config:
+      enabled: true
+      tags: ["ingestion"]
+      schema: 'ing'

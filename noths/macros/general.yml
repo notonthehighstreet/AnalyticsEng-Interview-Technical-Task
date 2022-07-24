@@ -1,0 +1,17 @@
+#  Use this file to document macros.
+#
+#  Note: Please keep macros ordered alphabetical.
+
+version: 2
+
+macros:
+  - name: generate_schema_name
+    description: > 
+      Overwrites DBT default behaviour to generate schema names by using the schema name specified in the model or the default temporary schema name if no schema is expecified.
+    arguments:
+      - name: custom_schema_name
+        type: string
+        description: The configured value of schema in the specified node, or none if a value is not supplied
+      - name: node
+        type: string
+        description: The node (model, package, transformation, etc.) that is currently being processed by DBT

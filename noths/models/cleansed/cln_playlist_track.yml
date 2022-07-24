@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: cln_playlist_track
+    description: > 
+      Cleansed playlist_track table 
+      Relationship table for many-to-many relationship playlists and tracks
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - PlaylistId
+            - TrackId

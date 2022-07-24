@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_artists
+    description: > 
+      Cleansed artists table 
+      Stores artists data. It is a simple table that contains only the artist id and name
+    columns:
+      - name: ArtistId
+        description: System generated id of the artists record
+        tests:
+          - unique
+          - not_null

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+
+  - name: dim_calendar
+    description: Calendar dimension table. One day per row. Additional dimensions to enable rollup for analysis.
+    columns:
+      - name: calendar_id
+        description: Unique Identifier for the table, based on the date.
+        tests:
+          - unique
+          - not_null

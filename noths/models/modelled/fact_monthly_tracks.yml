@@ -1,0 +1,13 @@
+version: 2
+
+models:
+
+  - name: fact_monthly_tracks
+    description: > 
+      Monthly Sale Statistics per Track
+    columns:
+      - name: monthly_track_pk
+        description: md5 hash Surrogate Key generated from activity_month, TrackId
+        tests:
+          - unique
+          - not_null

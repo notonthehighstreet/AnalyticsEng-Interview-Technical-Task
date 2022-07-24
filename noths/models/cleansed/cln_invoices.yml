@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: cln_invoices
+    description: > 
+      Cleansed invoices table 
+      Stores invoice header data
+    columns:
+      - name: InvoiceId
+        description: System generated id of the invoices record
+        tests:
+          - unique
+          - not_null
