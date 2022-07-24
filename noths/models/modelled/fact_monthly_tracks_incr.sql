@@ -1,6 +1,6 @@
 {{ config(
     enabled=true,
-    materialized='table',    
+    materialized='incremental',    
     unique_key='monthly_track_pk',
     cluster_by=['activity_month'],    
     schema='mdl',
@@ -28,7 +28,7 @@ with all_tracks as (
   from 
     all_tracks as t,
     {{ ref('dim_calendar') }} as c 
-  where c.calendar_date <= sysdate()
+  where c.calendar_date <= (select date_trunc('month', max(InvoiceDate)) from {{ ref('cln_invoices') }})
   )
 
 , monthly_track_sales as (
@@ -42,6 +42,9 @@ with all_tracks as (
     {{ ref('cln_invoices') }} as i
   inner join {{ ref('cln_invoice_items') }} as ii on 
     i.InvoiceId = ii.InvoiceId
+  {% if is_incremental() %}
+  where date_trunc('month', i.InvoiceDate) >= (select max(activity_month) from {{this}})
+  {% endif %}  
   group by 
     date_trunc('month', i.InvoiceDate)
     , ii.TrackId
